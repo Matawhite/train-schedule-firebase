@@ -24,6 +24,7 @@ myFirebase.on("child_added", function(childSnapshot) {
   var convertedDate = moment(new Date(childSnapshot.val().firstTrain));
   var trainTime = moment(convertedDate).format("HH:mm");
   var currentTime = moment();
+  // pushed back 1 year to make sure it comes before current time...wierd
   var firstTimeConverted = moment(trainTime,"hh:mm").subtract(1, "years");
   var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
   var tRemainder = diffTime % tfrequency;
