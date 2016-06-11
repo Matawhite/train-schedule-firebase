@@ -38,24 +38,28 @@
       </table>
       <!--Form Begin -->
       <div class="row">
-    <form class="col s12">
+    <form id="mainForm" class="col s12">
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Train Name" id="train_name" type="text" class="validate">
+          <label for="trainName">Train Name</label>
+          <input placeholder="i.e. Hogwarts Express" id="train_name" type="text" class="validate">
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Destination" id="destination" type="text" class="validate">
+          <label for="destination">Destination</label>
+          <input placeholder="i.e. 	Hogwarts Academy" id="destination" type="text" class="validate">
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="First Train Time (HH:MM) Miltary Time" id="firstTrain" type="text" class="validate">
+          <label for="firstTrain">First Train Time</label>
+          <input placeholder="(HH:MM) Miltary Time" id="firstTrain" type="text" class="validate">
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
+          <label for="frequency">Frequency</label>
           <input placeholder="Frequency (minutes)" id="frequency" type="text" class="validate">
         </div>
       </div>
@@ -68,6 +72,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script src="assets/javascript/app.js"></script>
   </body>
 </html>
